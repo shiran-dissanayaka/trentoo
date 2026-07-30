@@ -1,0 +1,13 @@
+{
+  // Deploy the static export (`out/`) as Cloudflare Worker static assets.
+  // Having this file present stops `wrangler deploy` from auto-running the
+  // OpenNext/SSR adapter — this site is fully static (next.config: output "export").
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "trentoo",
+  "compatibility_date": "2026-07-30",
+  "assets": {
+    "directory": "./out",
+    // Serve the exported 404.html for unknown paths.
+    "not_found_handling": "404-page"
+  }
+}
