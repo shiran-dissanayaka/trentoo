@@ -6,7 +6,7 @@
  */
 export const SITE_URL = "https://www.trentoo.com";
 // Temporary personal email — swap for a branded address (e.g. hello@trentoo.com) later.
-export const CONTACT_EMAIL = "dissanayakashiran099@gmail.com";
+export const CONTACT_EMAIL = "hello@trentoo.com";
 
 export const SITE_NAME = "Trentoo";
 export const GITHUB_URL = "https://github.com/shiran-dissanayaka";
