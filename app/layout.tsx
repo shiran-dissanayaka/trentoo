@@ -5,6 +5,7 @@ import "./globals.css";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { LogoGradientDef } from "@/components/Logo";
 import { services } from "@/lib/content";
 import {
   SITE_URL,
@@ -130,6 +131,7 @@ export default function RootLayout({
           Skip to content
         </a>
         <ScrollProgress />
+        <LogoGradientDef />
         <Nav />
         <main id="main">{children}</main>
         <Footer />
