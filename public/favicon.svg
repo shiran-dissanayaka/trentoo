@@ -6,11 +6,11 @@
       <stop offset="1" stop-color="#F0913A" />
     </linearGradient>
   </defs>
-  <!-- Two signal nodes on either side + an amber node that falls from the middle. -->
+  <!-- Two signal nodes + an amber node. It rests at the bottom (so the tab
+       always shows all three dots) and gently falls from the middle. -->
   <circle cx="9" cy="12" r="3.6" fill="url(#g)" />
   <circle cx="31" cy="12" r="3.6" fill="url(#g)" />
-  <circle cx="20" r="3.6" fill="#F0913A">
-    <animate attributeName="cy" values="12;31;31" keyTimes="0;0.55;1" dur="3s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0 0 1 1" />
-    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.15;0.55;0.7;1" dur="3s" repeatCount="indefinite" />
+  <circle cx="20" cy="26" r="3.6" fill="#F0913A">
+    <animate attributeName="cy" values="26;13;26" keyTimes="0;0.5;1" dur="2.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.33 0 0.2 1;0.6 0 0.35 1" />
   </circle>
 </svg>
