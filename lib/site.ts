@@ -4,7 +4,7 @@
  * ▸ TODO(you): set SITE_URL to your real production domain before deploying.
  * ▸ TODO(you): confirm CONTACT_EMAIL — this is a placeholder.
  */
-export const SITE_URL = "https://www.trentoo.com";
+export const SITE_URL = "https://trentoo.com";
 // Temporary personal email — swap for a branded address (e.g. hello@trentoo.com) later.
 export const CONTACT_EMAIL = "hello@trentoo.com";
 
