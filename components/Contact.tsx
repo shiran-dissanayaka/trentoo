@@ -34,14 +34,16 @@ export function Contact() {
                 View GitHub
               </a>
             </div>
-            <div className="mt-[34px] flex flex-wrap justify-center gap-x-[26px] gap-y-2 border-t border-line pt-[26px] font-mono text-[13px] text-muted">
+            <div className="mt-[34px] flex flex-col items-center gap-y-2.5 border-t border-line pt-[26px] font-mono text-[13px] text-muted sm:flex-row sm:flex-wrap sm:justify-center sm:gap-x-[26px]">
               <a
                 href={`mailto:${CONTACT_EMAIL}`}
                 className="transition-colors hover:text-paper"
               >
                 {CONTACT_EMAIL}
               </a>
-              <span aria-hidden>·</span>
+              <span aria-hidden className="hidden sm:inline">
+                ·
+              </span>
               <a
                 href={GITHUB_URL}
                 target="_blank"
@@ -50,7 +52,9 @@ export function Contact() {
               >
                 {GITHUB_URL.replace(/^https?:\/\//, "")}
               </a>
-              <span aria-hidden>·</span>
+              <span aria-hidden className="hidden sm:inline">
+                ·
+              </span>
               <span>{LOCATION}</span>
             </div>
           </div>
