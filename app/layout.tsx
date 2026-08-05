@@ -70,9 +70,15 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      // Google Search doesn't index SVG favicons and wants a square PNG of
+      // at least 48x48 — keep the SVG for browsers, but list PNGs first.
+      { url: "/favicon-48.png", type: "image/png", sizes: "48x48" },
+      { url: "/favicon-96.png", type: "image/png", sizes: "96x96" },
+      { url: "/favicon-192.png", type: "image/png", sizes: "192x192" },
       { url: "/favicon.svg", type: "image/svg+xml" },
       { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
     ],
+    shortcut: [{ url: "/favicon.ico" }],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
 };
@@ -91,7 +97,7 @@ const jsonLd = {
       name: SITE_NAME,
       description: SITE_DESCRIPTION,
       url: SITE_URL,
-      logo: `${SITE_URL}/og-cover.png`,
+      logo: `${SITE_URL}/logo-512.png`,
       email: CONTACT_EMAIL,
       areaServed: { "@type": "Country", name: "Sri Lanka" },
       address: {
