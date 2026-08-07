@@ -9,7 +9,8 @@ export const SITE_URL = "https://trentoo.com";
 export const CONTACT_EMAIL = "hello@trentoo.com";
 
 export const SITE_NAME = "Trentoo";
-export const GITHUB_URL = "https://github.com/shiran-dissanayaka";
+// Official Trentoo studio GitHub organization (used in contact, footer, JSON-LD).
+export const GITHUB_URL = "https://github.com/trentoo-studio";
 export const LOCATION = "Kandy, Sri Lanka";
 
 export const SITE_TAGLINE = "Software, Systems & AI products";

@@ -4,8 +4,6 @@
  * arrays so the JSX stays declarative and DRY.
  */
 
-import { GITHUB_URL } from "@/lib/site";
-
 export type IconName =
   | "code"
   | "ai"
@@ -195,6 +193,7 @@ export interface TeamMember {
 // dimmed, non-clickable state — kept as a safe fallback in the Team card.)
 const SHIRAN_LINKEDIN =
   "https://www.linkedin.com/in/d-m-shiran-supun-dissanayaka-aa167b2a3";
+const SHIRAN_GITHUB = "https://github.com/shiran-dissanayaka";
 const YASIRU_LINKEDIN = "https://www.linkedin.com/in/yasiru-chamith-lansakara";
 const YASIRU_GITHUB = "https://github.com/YasiruChamithLansakara";
 const NAVOD_LINKEDIN = "https://www.linkedin.com/in/navod-madushanka-7a1327256";
@@ -208,7 +207,7 @@ export const team: TeamMember[] = [
     photo: "/team/shiran.jpeg",
     email: "shiran@trentoo.com",
     linkedin: SHIRAN_LINKEDIN,
-    github: GITHUB_URL,
+    github: SHIRAN_GITHUB,
   },
   {
     name: "Yasiru Chamith Lansakara",
