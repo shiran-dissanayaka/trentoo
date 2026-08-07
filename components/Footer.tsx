@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Logo } from "@/components/Logo";
 import { SITE_TAGLINE } from "@/lib/site";
@@ -15,9 +16,14 @@ export function Footer() {
           <Logo size={24} />
           <span>Trentoo</span>
         </a>
-        <small className="font-mono text-[12px] text-muted-dim">
-          © {year} Trentoo · {SITE_TAGLINE}
-        </small>
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-2 font-mono text-[12px] text-muted-dim">
+          <Link href="/privacy" className="transition-colors hover:text-paper">
+            Privacy
+          </Link>
+          <small>
+            © {year} Trentoo · {SITE_TAGLINE}
+          </small>
+        </div>
       </Container>
     </footer>
   );

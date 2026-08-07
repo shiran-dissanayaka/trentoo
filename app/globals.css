@@ -543,6 +543,65 @@ body {
 }
 
 /* ============================================================
+   Legal / long-form prose (privacy policy, terms, …)
+   Constrained measure, generous rhythm, branded accents.
+   ============================================================ */
+.legal h2 {
+  font-family: var(--font-display);
+  font-size: clamp(19px, 2.3vw, 22px);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-paper);
+  margin-top: 2.5em;
+  margin-bottom: 0.55em;
+  scroll-margin-top: 84px;
+}
+.legal p {
+  color: var(--color-muted);
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 1.1em;
+}
+.legal strong {
+  color: var(--color-paper);
+  font-weight: 600;
+}
+.legal a {
+  color: var(--color-violet);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s var(--ease-brand);
+}
+.legal a:hover {
+  color: var(--color-paper);
+}
+.legal ul {
+  list-style: none;
+  margin: 0 0 1.1em;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55em;
+}
+.legal li {
+  position: relative;
+  padding-left: 1.15em;
+  color: var(--color-muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+.legal li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(100deg, var(--color-g1), var(--color-g2) 55%, var(--color-g3));
+}
+
+/* ============================================================
    Reduced motion — kill all motion, keep content visible
    ============================================================ */
 @media (prefers-reduced-motion: reduce) {
